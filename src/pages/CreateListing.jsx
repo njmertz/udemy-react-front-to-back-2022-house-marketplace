@@ -10,7 +10,7 @@ import {toast} from 'react-toastify';
 import {v4 as uuidv4} from 'uuid';
 
 function CreateListing() {
-  // eslint-disable-next-line
+  
   const [geolocationEnabled, setGeolocationEnabled] = useState(true);
   const [loading, setLoading] = useState(false);
   const {formData, setFormData, onMutate} = useFormData({
@@ -62,7 +62,7 @@ function CreateListing() {
     return () => {
       isMounted.current = false;
     }
-    // eslint-disable-next-line
+    
   }, [isMounted, auth, navigate]);
 
   const onSubmit = async (e) => {

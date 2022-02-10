@@ -10,7 +10,7 @@ import {toast} from 'react-toastify';
 import {v4 as uuidv4} from 'uuid';
 
 function EditListing() {
-  // eslint-disable-next-line
+  
   const [geolocationEnabled, setGeolocationEnabled] = useState(true);
   const [loading, setLoading] = useState(false);
   const [listing, setListing] = useState(false);
@@ -67,7 +67,7 @@ function EditListing() {
       }
     };
     fetchListing();
-    // eslint-disable-next-line
+    
   }, [params.listingId, navigate]);
 
   // Redirect if listing is not user's
@@ -92,7 +92,7 @@ function EditListing() {
     return () => {
       isMounted.current = false;
     }
-    // eslint-disable-next-line
+    
   }, [isMounted, auth, navigate]);
 
   const onSubmit = async (e) => {
